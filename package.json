@@ -1,0 +1,27 @@
+{
+  "name": "2015sdcodecamp",
+  "version": "0.0.1",
+  "description": "PostCSS: A Dumb Name For an Awesome Thing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awayken/2015sdcodecamp.git"
+  },
+  "keywords": [
+    "postcss",
+    "presentation",
+    "sdcodecamp"
+  ],
+  "author": "Miles Rausch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awayken/2015sdcodecamp/issues"
+  },
+  "homepage": "https://github.com/awayken/2015sdcodecamp",
+  "devDependencies": {
+    "gulp-postcss": "^6.0.1"
+  }
+}
