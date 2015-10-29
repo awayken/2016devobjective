@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/awayken/2015sdcodecamp",
   "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "gulp-postcss": "^6.0.1"
+    "gulp-postcss": "^6.0.1",
+    "run-sequence": "^1.1.4"
   }
 }
