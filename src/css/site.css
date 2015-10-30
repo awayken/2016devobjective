@@ -1,3 +1,18 @@
+/**
+Notes on what PostCSS should showcase:
+
+* autoprefixer
+* stylelint
+* style guide
+
+* CSS variables
+* custom MQs
+
+* concat
+* minify
+
+**/
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -429,17 +444,144 @@ th {
 
 /* Site styles */
 
+@import url("https://fonts.googleapis.com/css?family=Asul:400,700");
+
 body {
     color: #000;
     background: #fff;
-    font-family: "Courier New", monospace;
-    max-width: 76em;
-    margin: 0 auto;
+    font-family: "Asul", sans-serif;
+    margin-top: 3em;
 }
 
+a,
+a:visited {
+    color: #9C27B0; /* purple 500 */
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #BA68C8; /* purple 300 */
+}
+
+
+/* Button styles */
+.button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 100%;
+    padding: .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: box-shadow .2s cubic-bezier(.4,0,.2,1),background-color .2s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow .2s cubic-bezier(.4,0,.2,1),background-color .2s cubic-bezier(.4,0,.2,1);
+    vertical-align: middle
+}
+
+.button.hover,
+.button.focus,
+.button:hover,
+.button:focus {
+    outline: 0;
+    -webkit-transition: none;
+    transition: none
+}
+
+.button.action {
+    background: #FFEB3B; /* yellow 500 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+}
+
+
 /* Header styles */
-.header {}
+.header {
+    background: #9C27B0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    color: #fff;
+    left: 0;
+    padding: .5em 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.header--wrap {
+    max-width: 76em;
+    margin: 0 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .header--heading,
 .header--subheading {
+    display: inline-block;
+    line-height: 1;
     margin: 0;
+}
+
+.header--heading {
+    font-size: 2em;
+}
+
+.header--subheading {
+    font-size: 1.5em;
+}
+
+.header--heading + .header--subheading {
+    margin-left: .25em;
+}
+
+
+/* Main styles */
+.main {
+    max-width: 76em;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+
+/* Footer styles */
+.footer {
+    text-align: center;
+}
+
+.footer--meta {
+    font-size: .75em;
+    font-style: italic;
+}
+
+
+/* Cards styles */
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards:before,
+.cards:after {
+    content: " ";
+    display: table
+}
+
+.cards:after {
+    clear: both
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    box-sizing: border-box;
+    float: left;
+    padding: .25em;
+    width: 33%;
+}
+
+.card--heading {
+    font-size: 1.25em;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
 }
