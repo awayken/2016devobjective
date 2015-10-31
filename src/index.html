@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
         <title>PostCSS: A Dumb Name For an Awesome Thing</title>
         <link rel="stylesheet" href="styles/site.css">
     </head>
@@ -14,13 +17,65 @@
         </header>
 
         <main class="main" role="main">
-            <ol class="cards">
-                <li class="card">
-                    <h2 class="card--heading">Slides</h2>
-                    <p>You can view the <a href="https://slid.es/awayken/2015sdcodecamp" target="_blank">slides</a> on Slid.es.</p>
-                    <a class="button" href="https://slid.es/awayken/2015sdcodecamp" target="_blank">Learn More</a>
-                </li>
-            </ol>
+            <section class="paper">
+                <h1 class="paper--heading">Welcome!</h1>
+                <p>This is a short page of links related to my 2015 <a href="http://www.southdakotacodecamp.net/" target="_blank">South Dakota Code Camp</a> talk on PostCSS.</p>
+            </section>
+
+            <section class="paper">
+                <ol class="cards">
+                    <li class="card">
+                        <header class="card--header">
+                            <h2 class="card--title">Slides</h2>
+                            <img class="card--image" src="http://placehold.it/600x300">
+                        </header>
+                        <main class="card--content">
+                            <p>You can view the slides on Slid.es.</p>
+                        </main>
+                        <footer class="card--buttons">
+                            <a class="button" href="https://slid.es/awayken/2015sdcodecamp" target="_blank">Learn More</a>
+                        </footer>
+                    </li>
+                    <li class="card">
+                        <header class="card--header">
+                            <h2 class="card--title">Demo Source Code</h2>
+                            <img class="card--image" src="http://placehold.it/600x300">
+                        </header>
+                        <main class="card--content">
+                            <p>You can view the demo source code on GitHub.</p>
+                        </main>
+                        <footer class="card--buttons">
+                            <a class="button" href="https://github.com/awayken/2015sdcodecamp" target="_blank">Browse Code</a>
+                            <a class="button" href="https://github.com/awayken/2015sdcodecamp/archive/master.zip" target="_blank">Download ZIP</a>
+                        </footer>
+                    </li>
+                    <li class="card">
+                        <header class="card--header">
+                            <h2 class="card--title">PostCSS</h2>
+                            <img class="card--image" src="http://placehold.it/600x300">
+                        </header>
+                        <main class="card--content">
+                            <p>You can view the PostCSS project on GitHub.</p>
+                        </main>
+                        <footer class="card--buttons">
+                            <a class="button" href="https://github.com/postcss/postcss" target="_blank">Browse Code</a>
+                            <a class="button" href="https://gitter.im/postcss/postcss" target="_blank">Gitter</a>
+                        </footer>
+                    </li>
+                    <li class="card">
+                        <header class="card--header">
+                            <h2 class="card--title">PostCSS Deep Dive</h2>
+                            <img class="card--image" src="http://placehold.it/600x300">
+                        </header>
+                        <main class="card--content">
+                            <p>You can read the PostCSS Deep Dive on Tuts+.</p>
+                        </main>
+                        <footer class="card--buttons">
+                            <a class="button" href="http://webdesign.tutsplus.com/series/postcss-deep-dive--cms-889" target="_blank">Read More</a>
+                        </footer>
+                    </li>
+                </ol>
+            </section>
         </main>
 
         <footer class="footer" role="footer">
