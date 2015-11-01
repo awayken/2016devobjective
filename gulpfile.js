@@ -2,7 +2,10 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
+    var postcss = require('gulp-postcss');
+
     return gulp.src('./src/css/*.css')
+        .pipe( postcss([]) )
         .pipe( gulp.dest('./dist/styles') )
         .pipe( browserSync.stream() );
 });
