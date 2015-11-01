@@ -459,7 +459,7 @@ body {
     color: #212121;
     font-family: "Asul", sans-serif;
     font-size: .9em;
-    margin-top: 4em;
+    padding-top: 5em;
 }
 
 a,
@@ -475,6 +475,12 @@ a:focus {
 
 img {
     max-width: 100%;
+}
+
+@media (min-width: 33em) {
+    body {
+        padding-top: 3.5em;
+    }
 }
 
 
@@ -539,6 +545,14 @@ img {
 
 .header--heading + .header--subheading {
     margin-left: .25em;
+}
+
+@media (min-width: 33em) {
+    .header--heading,
+    .header--subheading {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 
@@ -626,4 +640,22 @@ img {
 
 .card--buttons {
     padding: .125em .25em 1em;
+}
+
+@media (min-width: 33em) {
+    .card {
+        float: left;
+        margin: 0 1% .7em;
+        width: 48%;
+    }
+
+    .card + .card {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 60em ) {
+    .card {
+        width: 31%;
+    }
 }
