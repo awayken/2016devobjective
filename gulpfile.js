@@ -4,6 +4,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('styles', function() {
     var postcss = require('gulp-postcss');
     var autoprefixer = require('autoprefixer');
+    var cssnano = require('cssnano');
 
     return gulp.src('./src/css/*.css')
         .pipe( postcss([
@@ -13,7 +14,8 @@ gulp.task('styles', function() {
                     '> 5%',
                     'ie 8'
                 ]
-            })
+            }),
+            cssnano()
         ]) )
         .pipe( gulp.dest('./dist/styles') )
         .pipe( browserSync.stream() );
