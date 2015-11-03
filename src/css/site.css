@@ -1,7 +1,6 @@
 /**
 Notes on what PostCSS should showcase:
 
-* autoprefixer
 * stylelint
 * style guide
 
@@ -496,6 +495,7 @@ img {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 300ms all linear;
     vertical-align: middle;
 }
 
