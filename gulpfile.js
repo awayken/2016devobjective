@@ -3,9 +3,18 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
     var postcss = require('gulp-postcss');
+    var autoprefixer = require('autoprefixer');
 
     return gulp.src('./src/css/*.css')
-        .pipe( postcss([]) )
+        .pipe( postcss([
+            autoprefixer({
+                browsers: [
+                    'last 2 versions',
+                    '> 5%',
+                    '> ie 8'
+                ]
+            })
+        ]) )
         .pipe( gulp.dest('./dist/styles') )
         .pipe( browserSync.stream() );
 });

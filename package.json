@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/awayken/2015sdcodecamp",
   "devDependencies": {
+    "autoprefixer": "^6.0.3",
     "browser-sync": "^2.9.11",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
