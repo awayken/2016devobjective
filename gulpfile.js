@@ -11,7 +11,7 @@ gulp.task('styles', function() {
                 browsers: [
                     'last 2 versions',
                     '> 5%',
-                    '> ie 8'
+                    'ie 8'
                 ]
             })
         ]) )
