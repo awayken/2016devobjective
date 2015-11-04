@@ -1,0 +1,38 @@
+/* Base Styles */
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fafafa;
+}
+
+body {
+    color: #212121;
+    font-family: "Asul", sans-serif;
+    font-size: .9em;
+    padding-top: 5em;
+}
+
+a,
+a:visited {
+    color: #9c27b0; /* purple 500 */
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #ba68c8; /* purple 300 */
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 33em) {
+    body {
+        padding-top: 3.5em;
+    }
+}

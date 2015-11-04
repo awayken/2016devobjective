@@ -1,0 +1,11 @@
+/* Footer styles */
+
+.footer {
+    padding: 1em;
+    text-align: center;
+}
+
+.footer--meta {
+    font-size: .75em;
+    font-style: italic;
+}

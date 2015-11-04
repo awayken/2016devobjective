@@ -1,0 +1,78 @@
+/* Cards styles */
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards:before,
+.cards:after {
+    content: " ";
+    display: table;
+}
+
+.cards:after {
+    clear: both;
+}
+
+.card {
+    background: #fff;
+    border-radius: .35em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .35);
+    margin: 0;
+    overflow: hidden;
+}
+
+.card + .card {
+    margin-top: 1em;
+}
+
+.card--header {
+    min-height: 3em;
+    position: relative;
+}
+
+.card--title {
+    bottom: .25em;
+    font-size: 1.5em;
+    font-weight: normal;
+    left: .75em;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .75em;
+}
+
+.card--image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card--content {
+    padding: 1em 1.25em .125em;
+}
+
+.card--buttons {
+    padding: .125em .25em 1em;
+}
+
+@media (min-width: 33em) {
+    .card {
+        float: left;
+        margin: 0 1% .7em;
+        width: 48%;
+    }
+
+    .card + .card {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 60em) {
+    .card {
+        width: 31%;
+    }
+}

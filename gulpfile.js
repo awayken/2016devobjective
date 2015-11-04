@@ -8,8 +8,9 @@ gulp.task('styles', function() {
     var stylelint = require('stylelint');
     var reporter = require('postcss-reporter');
     var fontMagician = require('postcss-font-magician');
+    var atImport = require('postcss-import');
 
-    return gulp.src('./src/css/*.css')
+    return gulp.src('./src/css/site.css')
         .pipe( postcss([
             stylelint({
                 "rules": {
@@ -73,6 +74,7 @@ gulp.task('styles', function() {
             reporter({
                 clearMessages: true
             }),
+            atImport(),
             autoprefixer({
                 browsers: [
                     'last 2 versions',
