@@ -1,6 +1,6 @@
 {
   "name": "2015sdcodecamp",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "PostCSS: A Dumb Name For an Awesome Thing",
   "main": "index.html",
   "scripts": {
