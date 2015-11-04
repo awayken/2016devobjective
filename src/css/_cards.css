@@ -1,5 +1,7 @@
 /* Cards styles */
 
+@import url("_variables.css");
+
 .cards {
     list-style: none;
     margin: 0;
@@ -59,7 +61,7 @@
     padding: .125em .25em 1em;
 }
 
-@media (min-width: 33em) {
+@media (--gte-tablet-portrait) {
     .card {
         float: left;
         margin: 0 1% .7em;
@@ -71,7 +73,7 @@
     }
 }
 
-@media (min-width: 60em) {
+@media (--gte-desktop) {
     .card {
         width: 31%;
     }

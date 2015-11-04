@@ -33,7 +33,7 @@ img {
     max-width: 100%;
 }
 
-@media (min-width: 33em) {
+@media (--gte-tablet-portrait) {
     body {
         padding-top: 3.5em;
     }

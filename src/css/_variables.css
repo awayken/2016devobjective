@@ -3,3 +3,5 @@
     --color-primary-light: #ba68c8;
 }
 
+@custom-media --gte-tablet-portrait (min-width: 33em);
+@custom-media --gte-desktop (min-width: 60em);
