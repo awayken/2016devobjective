@@ -1,18 +1,14 @@
-/**
-Notes on what PostCSS should showcase:
+/* Notes on what PostCSS should showcase:
 
-* stylelint
 * style guide
 
 * CSS variables
 * custom MQs
 
-* concat
+* concat */
 
-**/
-
+/* stylelint-disable */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -438,6 +434,7 @@ td,
 th {
   padding: 0;
 }
+/* stylelint-enable */
 
 
 /* Site styles */
@@ -462,13 +459,13 @@ body {
 
 a,
 a:visited {
-    color: #9C27B0; /* purple 500 */
+    color: #9c27b0; /* purple 500 */
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #BA68C8; /* purple 300 */
+    color: #ba68c8; /* purple 300 */
 }
 
 img {
@@ -508,8 +505,9 @@ img {
 
 
 /* Header styles */
+
 .header {
-    background: #9C27B0;
+    background: #9c27b0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
     color: #fff;
     left: 0;
@@ -521,8 +519,8 @@ img {
 }
 
 .header--wrap {
-    max-width: 76em;
     margin: 0 auto;
+    max-width: 76em;
 }
 
 .header--heading,
@@ -556,20 +554,23 @@ img {
 
 
 /* Main styles */
+
 .main {
-    max-width: 76em;
     margin: 0 auto;
+    max-width: 76em;
     padding: .25em;
 }
 
 
 /* Paper styles */
+
 .paper {
     padding: .5em;
 }
 
 
 /* Footer styles */
+
 .footer {
     padding: 1em;
     text-align: center;
@@ -582,6 +583,7 @@ img {
 
 
 /* Cards styles */
+
 .cards {
     list-style: none;
     margin: 0;
@@ -591,11 +593,11 @@ img {
 .cards:before,
 .cards:after {
     content: " ";
-    display: table
+    display: table;
 }
 
 .cards:after {
-    clear: both
+    clear: both;
 }
 
 .card {
@@ -653,7 +655,7 @@ img {
     }
 }
 
-@media (min-width: 60em ) {
+@media (min-width: 60em) {
     .card {
         width: 31%;
     }
