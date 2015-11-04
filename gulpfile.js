@@ -9,6 +9,7 @@ gulp.task('styles', function() {
     var reporter = require('postcss-reporter');
     var fontMagician = require('postcss-font-magician');
     var atImport = require('postcss-import');
+    var cssnext = require('postcss-cssnext');
 
     return gulp.src('./src/css/site.css')
         .pipe( postcss([
@@ -75,6 +76,7 @@ gulp.task('styles', function() {
                 clearMessages: true
             }),
             atImport(),
+            cssnext(),
             autoprefixer({
                 browsers: [
                     'last 2 versions',
