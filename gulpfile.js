@@ -7,6 +7,7 @@ gulp.task('styles', function() {
     var cssnano = require('cssnano');
     var stylelint = require('stylelint');
     var reporter = require('postcss-reporter');
+    var fontMagician = require('postcss-font-magician');
 
     return gulp.src('./src/css/*.css')
         .pipe( postcss([
@@ -79,6 +80,7 @@ gulp.task('styles', function() {
                     'ie 8'
                 ]
             }),
+            fontMagician(),
             cssnano()
         ]) )
         .pipe( gulp.dest('./dist/styles') )
