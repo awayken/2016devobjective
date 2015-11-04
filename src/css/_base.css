@@ -1,5 +1,7 @@
 /* Base Styles */
 
+@import url("_variables.css");
+
 * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -18,13 +20,13 @@ body {
 
 a,
 a:visited {
-    color: #9c27b0; /* purple 500 */
+    color: var(--color-primary);
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #ba68c8; /* purple 300 */
+    color: var(--color-primary-light);
 }
 
 img {

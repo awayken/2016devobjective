@@ -1,7 +1,9 @@
 /* Header styles */
 
+@import url("_variables.css");
+
 .header {
-    background: #9c27b0;
+    background: var(--color-primary);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
     color: #fff;
     left: 0;
