@@ -3,7 +3,6 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('styles', function() {
     var postcss = require('gulp-postcss');
-    var autoprefixer = require('autoprefixer');
     var cssnano = require('cssnano');
     var stylelint = require('stylelint');
     var reporter = require('postcss-reporter');
@@ -76,13 +75,13 @@ gulp.task('styles', function() {
                 clearMessages: true
             }),
             atImport(),
-            cssnext(),
-            autoprefixer({
+            cssnext({
                 browsers: [
                     'last 2 versions',
                     '> 5%',
                     'ie 8'
-                ]
+                ],
+                warnForDuplicates: false
             }),
             fontMagician(),
             cssnano()
