@@ -1,5 +1,5 @@
 {
-  "name": "2015sdcodecamp",
+  "name": "2016devobjective",
   "version": "1.1.0",
   "description": "PostCSS: A Dumb Name For an Awesome Thing",
   "main": "index.html",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/awayken/2015sdcodecamp.git"
+    "url": "https://github.com/awayken/2016devobjective.git"
   },
   "keywords": [
     "postcss",
@@ -18,9 +18,9 @@
   "author": "Miles Rausch",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/awayken/2015sdcodecamp/issues"
+    "url": "https://github.com/awayken/2016devobjective/issues"
   },
-  "homepage": "https://github.com/awayken/2015sdcodecamp",
+  "homepage": "https://github.com/awayken/2016devobjective",
   "devDependencies": {
     "browser-sync": "^2.9.11",
     "cssnano": "^3.3.2",
