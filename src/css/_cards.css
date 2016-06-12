@@ -48,9 +48,11 @@
 }
 
 .card--image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+    background-color: #ccc;
+    background-image: placehold(600, 200);
+    background-position: top center;
+    background-size: cover;
+    height: 10em;
 }
 
 .card--content {
