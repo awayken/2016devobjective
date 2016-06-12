@@ -9,9 +9,11 @@ gulp.task('styles', function() {
     var fontMagician = require('postcss-font-magician');
     var atImport = require('postcss-import');
     var cssnext = require('postcss-cssnext');
+    var placeholder = require('postcss-placehold');
 
     return gulp.src('./src/css/site.css')
         .pipe( postcss([
+            atImport(),
             stylelint({
                 "rules": {
                     "string-quotes": [ 2, "double" ],
@@ -74,7 +76,7 @@ gulp.task('styles', function() {
             reporter({
                 clearMessages: true
             }),
-            atImport(),
+            placeholder(),
             cssnext({
                 browsers: [
                     'last 2 versions',
