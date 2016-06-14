@@ -1,6 +1,6 @@
 {
   "name": "2016devobjective",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "PostCSS: A Dumb Name For an Awesome Thing",
   "main": "index.html",
   "scripts": {
