@@ -48,9 +48,7 @@
 }
 
 .card--image {
-    background-color: #ccc;
-    background-image: placehold(600, 200);
-    background-position: top center;
+    background: placehold(600, 200) top center #ccc;
     background-size: cover;
     height: 10em;
 }
